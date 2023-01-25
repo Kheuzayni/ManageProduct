@@ -16,5 +16,4 @@ public class Produit {
     private Double prixProduit;
     private Date dateCreation;
 
-
 }
