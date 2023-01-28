@@ -9,9 +9,12 @@ public class ProduitService {
     Produit saveProduit(Produit p);
     //Modifier produit
     Produit updateProduit(Produit p);
-    //Supprimer un prodit
+    //Supprimer un produit
     void deleteProduit(Produit p);
-    void deleteProduitById(Long id);s
+    //Supprimer produit par id
+    void deleteProduitById(Long id);
+    //Get Produit
     Produit getProduit(Long id);
+    //Lister les produits
     List<Produit> getAllProduits();
 }
