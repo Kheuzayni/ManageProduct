@@ -9,6 +9,7 @@ public class ProduitService {
     Produit saveProduit(Produit p);
     //Modifier produit
     Produit updateProduit(Produit p);
+    //Supprimer un prodit
     void deleteProduit(Produit p);
     void deleteProduitById(Long id);s
     Produit getProduit(Long id);
