@@ -13,7 +13,7 @@ public class ProduitService {
     void deleteProduit(Produit p);
     //Supprimer produit par id
     void deleteProduitById(Long id);
-    //Get Produit
+    //Get Produits
     Produit getProduit(Long id);
     //Lister les produits
     List<Produit> getAllProduits();
