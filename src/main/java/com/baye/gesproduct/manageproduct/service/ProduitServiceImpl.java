@@ -33,10 +33,10 @@ public class ProduitServiceImpl implements ProduitService {
     }
 
     public Produit getProduit(Long id){
-        return null;
+        return produitRepository.findById(id).get();
     }
 
     public List<Produit> getAllProduits (){
-        return null;
+        return produitRepository.findAll();
     }
 }
