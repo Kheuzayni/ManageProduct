@@ -4,7 +4,7 @@ import com.baye.gesproduct.manageproduct.entities.Produit;
 
 import java.util.List;
 
-public class ProduitService {
+public interface ProduitService {
     //Enregistrer Produits
     Produit saveProduit(Produit p);
     //Modifier produits
