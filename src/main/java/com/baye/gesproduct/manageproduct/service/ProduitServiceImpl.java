@@ -1,12 +1,15 @@
 package com.baye.gesproduct.manageproduct.service;
 
 import com.baye.gesproduct.manageproduct.entities.Produit;
+import com.baye.gesproduct.manageproduct.repository.ProduitRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class ProduitServiceImpl implements ProduitService {
+
+    ProduitRepository produitRepository;
 
     @Override
     public Produit saveProduit(Produit P){
