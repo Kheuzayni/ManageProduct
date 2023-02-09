@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ProduitServiceImpl extends ProduitService {
+public class ProduitServiceImpl implements ProduitService {
 
     @Override
     public Produit saveProduit(Produit P){
