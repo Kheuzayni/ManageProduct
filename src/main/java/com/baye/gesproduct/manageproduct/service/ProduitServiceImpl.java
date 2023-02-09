@@ -19,15 +19,18 @@ public class ProduitServiceImpl implements ProduitService {
     }
 
     @Override
-    public Produit updateProduit(Produit P){
-        return null;
+    public Produit updateProduit(Produit p){
+        return produitRepository.save(p);
     }
 
     @Override
-    public void deleteProduit(Produit P){
+    public void deleteProduit(Produit p){
+        produitRepository.delete(p);
     }
 
-    public void deleteProduitById (Long id){}
+    public void deleteProduitById (Long id){
+        produitRepository.deleteById(id);
+    }
 
     public Produit getProduit(Long id){
         return null;
