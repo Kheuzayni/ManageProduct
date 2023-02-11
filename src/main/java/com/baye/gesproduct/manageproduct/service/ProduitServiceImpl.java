@@ -13,6 +13,7 @@ public class ProduitServiceImpl implements ProduitService {
     @Autowired
     ProduitRepository produitRepository;
 
+    //On appelle ces fonctions depuis service
     @Override
     public Produit saveProduit(Produit p){
         return produitRepository.save(p) ;
