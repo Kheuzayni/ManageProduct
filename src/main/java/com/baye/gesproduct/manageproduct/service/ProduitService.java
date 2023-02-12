@@ -5,7 +5,7 @@ import com.baye.gesproduct.manageproduct.entities.Produit;
 import java.util.List;
 
 public interface ProduitService {
-    //Fonctions depuis serviceImpl
+    // Fonctions depuis serviceIMPL
 
     //Enregistrer Produits
     Produit saveProduit(Produit p);
