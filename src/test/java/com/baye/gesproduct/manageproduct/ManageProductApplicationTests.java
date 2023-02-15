@@ -21,7 +21,7 @@ class ManageProductApplicationTests {
     void contextLoads() {
     }
 
-/*    @Autowired
+    @Autowired
     private ProduitRepository produitRepository;
 
     @Test
@@ -98,7 +98,7 @@ class ManageProductApplicationTests {
     @Test
     public void testfindByCategorie()
     {
-        Categorie cat = new Categorie();
+        Category cat = new Category();
         cat.setIdCat(1L);
 
         List<Produit> prods = produitRepository.findByCategorie(cat);
@@ -137,5 +137,5 @@ class ManageProductApplicationTests {
         {
             System.out.println(p);
         }
-    }*/
+    }
 }
