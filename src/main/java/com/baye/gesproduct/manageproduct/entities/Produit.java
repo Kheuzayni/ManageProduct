@@ -13,9 +13,9 @@ public class Produit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nom;
-    private Double prix;
-    private Date dateCreation;
+    private String nomProduit;
+    private Double prixProduit;
+    private Date dateCreationProduit;
 
     @ManyToOne
     private Category categorie;
