@@ -21,13 +21,14 @@ class ManageProductApplicationTests {
     void contextLoads() {
     }
 
-/*    @Autowired
+    @Autowired
     private ProduitRepository produitRepository;
 
     @Test
     public void testCreateProduit() {
-        Produit prod = new Produit("PC Asus",1500.500,new Date());
+        Produit prod = new Produit("PC Baye",3000.500,new Date());
         produitRepository.save(prod);
+        System.out.println("************* produit créé avec succès *************");
     }
 
     @Test
@@ -35,6 +36,7 @@ class ManageProductApplicationTests {
     {
         Produit p = produitRepository.findById(1L).get();
         System.out.println(p);
+        System.out.println("************* produit trouvé *************");
     }
 
     @Test
@@ -45,6 +47,8 @@ class ManageProductApplicationTests {
         produitRepository.save(p);
 
         System.out.println(p);
+
+        System.out.println("************* produit modifié avec succès *************");
     }
 
     @Test
@@ -137,5 +141,5 @@ class ManageProductApplicationTests {
         {
             System.out.println(p);
         }
-    }*/
+    }
 }
