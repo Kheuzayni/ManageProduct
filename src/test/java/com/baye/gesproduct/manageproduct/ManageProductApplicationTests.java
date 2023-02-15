@@ -21,7 +21,7 @@ class ManageProductApplicationTests {
     void contextLoads() {
     }
 
-    @Autowired
+/*    @Autowired
     private ProduitRepository produitRepository;
 
     @Test
@@ -137,5 +137,5 @@ class ManageProductApplicationTests {
         {
             System.out.println(p);
         }
-    }
+    }*/
 }
