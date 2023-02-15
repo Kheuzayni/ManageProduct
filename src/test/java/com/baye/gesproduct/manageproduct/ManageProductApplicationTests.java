@@ -98,7 +98,7 @@ class ManageProductApplicationTests {
     @Test
     public void testfindByCategorie()
     {
-        Categorie cat = new Categorie();
+        Category cat = new Category();
         cat.setIdCat(1L);
 
         List<Produit> prods = produitRepository.findByCategorie(cat);
