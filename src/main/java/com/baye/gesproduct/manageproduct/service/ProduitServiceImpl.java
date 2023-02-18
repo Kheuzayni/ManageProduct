@@ -30,14 +30,17 @@ public class ProduitServiceImpl implements ProduitService {
         produitRepository.delete(p);
     }
 
+    @Override
     public void deleteProduitById (Long id){
         produitRepository.deleteById(id);
     }
 
+    @Override
     public Produit getProduit(Long id){
         return produitRepository.findById(id).get();
     }
 
+    @Override
     public List<Produit> getAllProduits (){
         return produitRepository.findAll();
     }
@@ -61,13 +64,13 @@ public class ProduitServiceImpl implements ProduitService {
     }
 
     @Override
-    public List<Produit> findByCategory(Category category) {
+    public List<Produit> findByCategorie(Category category) {
 
         return produitRepository.findByCategorie(category);
     }
 
     @Override
-    public List<Produit> findByCategoryIdCat(Long id) {
+    public List<Produit> findByCategorieIdCat(Long id) {
 
         return produitRepository.findByCategorieIdCat(id);
     }
