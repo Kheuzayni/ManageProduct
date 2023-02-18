@@ -1,5 +1,6 @@
 package com.baye.gesproduct.manageproduct.service;
 
+import com.baye.gesproduct.manageproduct.entities.Category;
 import com.baye.gesproduct.manageproduct.entities.Produit;
 import com.baye.gesproduct.manageproduct.repository.ProduitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,4 +41,47 @@ public class ProduitServiceImpl implements ProduitService {
     public List<Produit> getAllProduits (){
         return produitRepository.findAll();
     }
+
+    @Override
+    public List<Produit> findByNomProduit(String nom) {
+
+        return produitRepository.findByNomProduit(nom);
+    }
+
+    @Override
+    public List<Produit> findByNomProduitContains(String nom) {
+
+        return produitRepository.findByNomProduitContains(nom);
+    }
+
+    @Override
+    public List<Produit> findByNomPrix(String nom, Double prix) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public List<Produit> findByCategory(Category category) {
+
+        return produitRepository.findByCategorie(category);
+    }
+
+    @Override
+    public List<Produit> findByCategoryIdCat(Long id) {
+
+        return produitRepository.findByCategorieIdCat(id);
+    }
+
+    @Override
+    public List<Produit> findByOrderByNomProduitAsc() {
+
+        return produitRepository.findByOrderByNomProduitAsc();
+    }
+
+    @Override
+    public List<Produit> trierProduitsNomsPrix() {
+
+        return produitRepository.trierProduitsNomsPrix();
+    }
+
 }
