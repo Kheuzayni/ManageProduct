@@ -14,6 +14,7 @@ import com.baye.gesproduct.manageproduct.entities.Produit;
 import com.baye.gesproduct.manageproduct.entities.Category;
 import com.baye.gesproduct.manageproduct.repository.ProduitRepository;
 
+//For test
 @SpringBootTest
 class ManageProductApplicationTests {
 
